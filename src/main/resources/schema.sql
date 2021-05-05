@@ -15,3 +15,5 @@ create table orders
     product_name varchar not null unique,
     amount       integer not null
 );
+
+create index customer_id_ind on orders(customer_id);
